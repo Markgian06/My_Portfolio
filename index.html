@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+   <head>
+     <meta charset="UTF-8">
+     <meta name="description" content=" My Portfolio">
+     <meta name="keywords" content="Portfolio">
+     <meta name="author" content="Mark Gian T. Abejero">
+     <meta name="viewport" content="width=devices-width,intial=scale=1.0">
+       <title>My Portfolio</title>
+       <link rel="icon" href="C:\Users\Asus\Documents\html files\My_Portfolio\IMAGES\icon.ico"/>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+       <link rel="stylesheet" href="style.css"/>      
+       <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+   </head>      
+
+   <body>
+       <div id="mySidenav">
+         <a href="games.html" id="myportfolio">Portfolio</a>
+         <a href="#home1" id="home">Home</a>
+         <a href="#about2" id="about">About</a>
+         <a href="#skill3" id="skill">Skills</a>
+         <a href="#contact4" id="contact">Contact</a>         
+       </div>
+       
+
+       <section class="home" id="home1">  
+         <div class="home-content">
+           <h3 id="title">Hello, I'm</h3>
+           <h2 id="hitext" class="responsive-text">Mark Gian Abejero</h2>
+           <h4>And I'm a <span class="text"></span></h4>
+           <p class="homeP">I'm a Web Developer with no experience, Practicing creating a website, and Improving my front-end skills.</p>
+         <div class="socialmedia">
+           <a href="https://www.facebook.com/IamMarkGianAbejero/"><img src='IMAGES/bxl-facebook.svg' alt='Facebook'></a>
+           <a href="https://www.instagram.com/mar_giannn/?fbclid=IwAR0MoI4KgVnp9AS5Ty29bg1GO3jb47gvUnxn8DMv4fWcaAwTDTKLDog0ASY"><img src='IMAGES/bxl-instagram.svg' alt='Instagram'></a>
+           <a href="https://twitter.com/Mkujan6?t=Gl3JU3sMkPvUAqYWYRcl2A&s=09&fbclid=IwAR2F_aqX7hsEY88_MmHLuv1NFO2eCGoGi4mG-zxc8PcqKzJaP7pLvX6oyC8"><img src='IMAGES/bxl-twitter.svg' alt='Twitter'></a>
+           <a href="https://github.com/Markgian06"><img src='IMAGES/bxl-github.svg' alt='GitHub'></a>
+         </div>
+           <a href="IMAGES/Cv.pdf" class="btn-box">More About Me</a>
+         </div>
+         <div class="home_image">
+         <div class="home_image-container">
+         <div class="home_image-item">
+         <div class="vintage-overlay"></div>
+           <img src="IMAGES/2images-modified.png" alt="Slide 1">
+         </div>
+         <div class="home_image-item">
+         <div class="vintage-overlay"></div>
+           <img src="IMAGES/3images-modified.png" alt="Slide 2">
+         </div>
+         <div class="home_image-item">
+         <div class="vintage-overlay"></div>
+           <img src="IMAGES/4images-modified.png" alt="Slide 3">
+         </div>
+         <div class="home_image-item">
+         <div class="vintage-overlay"></div>
+           <img src="IMAGES/5images-modified.png" alt="Slide 4">
+         </div>
+         <div class="home_image-item">
+         <div class="vintage-overlay"></div>
+           <img src="IMAGES/1images-modified.png" alt="Slide 5">
+         </div>
+            <!-- Add more home_image-items as needed -->
+         </div>
+           <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+           <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+         </div>
+         </section> 
+
+
+         <section class="about_container" id="about2">
+         <div class="about-content">
+         <div class="about_image">
+           <img src="IMAGES/imagefotabout.jpg" alt="about">
+         </div>
+           <h3 id="about_title">About Me</h3>
+           <p class="about_details">Hello, I'm Mark Gian,  and I'm from PulangLupa 1, and I'm 19 yrs old , 
+            I am interested in playing online games, whether on mobile or computer platforms.
+            I am excited to begin my journey as a Bachelor of Science in Information Systems students. 
+            I have always  been interested in the world of programming. Within this degree, 
+            I am to  gain knowledge and tools needed to build a successful career in programming, 
+            and I'm eager to continue growing and learning, just as I do in games and 
+            I'm excited to begin this journey with all of you, as we strive for goals and work towards a better future.</p>
+          </div>
+         </section>
+
+
+         <section class="skill-container" id="skill3">
+           <h2 class="section-title">My Skills</h2>
+         <div class="skill-content">
+         <div class="skill">
+           <img src="IMAGES/bxl-html5.svg" alt="HTML">
+         <div class="overlay">
+           <p>HTML</p>
+         </div>
+         </div>
+         <div class="skill">
+           <img src="IMAGES/bxl-css3.svg" alt="CSS">
+         <div class="overlay">
+           <p>CSS</p>
+         </div>
+         </div>
+         <div class="skill">
+           <img src="IMAGES/bxl-javascript.svg" alt="JS">
+         <div class="overlay">
+           <p>JavaScript</p>
+         </div>
+         </div>
+         <div class="skill">
+          <img src="IMAGES/bxl-java.svg" alt="JAVA">
+         <div class="overlay">
+          <p>Java</p>
+         </div>
+         </div>
+         <div class="skill">
+           <img src="IMAGES/bxl-python.svg" alt="PYTHON">
+         <div class="overlay">
+           <p>Python</p>
+         </div>
+         </div>
+         <!-- Add more skills as needed -->
+         </div>
+         </section>
+
+
+         <section class="contact-container" id="contact4">
+         <div class="contact-content">
+           <h2 class="section-title">Contact Me</h2>
+           <p class="contact-description">Feel free to reach out to me for any inquiries or collaborations.</p>
+             <form action="#" method="post" class="contact-form">
+             <label for="name">Your Name:</label>
+             <input type="text" id="name" name="name" placeholder="Your Name">
+
+             <label for="email">Your Email:</label>
+             <input type="email" id="email" name="email" placeholder="Your Email">
+  
+             <label for="message">Your Message:</label>
+             <textarea id="message" name="message" placeholder="Your Message"></textarea>
+  
+             <button type="submit" class="btn-contact">Send Message</button>
+             </form>
+         </div>
+         </div>
+         </section>  
+         <script defer src="javascript.js"></script>
+   </body>
+ </html>

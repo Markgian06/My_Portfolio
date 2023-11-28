@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="description" content=" My Portfolio">
+     <meta name="keywords" content="Portfolio">
+     <meta name="author" content="Mark Gian T. Abejero">
+     <meta name="viewport" content="width=devices-width,intial=scale=1.0">
+         <title>My Portfolio</title>
+         <link rel="icon" href="IMAGES/icon.ico"/>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">     
+         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+
+     <style>     
+         .tic-tac-toe-container {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-family: 'Courier New', Courier, monospace;
+         }
+
+         #scoreboard {
+             margin-bottom: 10px;
+             font-size: 18px;
+         }
+
+         #tic-tac-toe-board {
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+             grid-gap: 5px;
+             max-width: 250px;
+             margin: 0 auto;
+             border: 2px solid #6e4934;
+             background-color: #c0a080;
+             border-radius: 10px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+             padding: 10px;
+         }
+
+         .cell {
+             width: 70px;
+             height: 70px;
+             padding: 0;
+             font-size: 20px;
+             text-align: center;
+             line-height: 70px;
+             background-color: #c0a080;
+             border: 2px solid #6e4934;
+             color: #fff;
+             cursor: pointer;
+             transition: background-color 0.3s ease;
+             border-radius: 5px;
+         }
+
+         .cell:hover {
+             background-color: #8c735d;
+         }
+
+     @media (max-width: 600px) {
+         #tic-tac-toe-board {
+             max-width: none;
+             grid-template-columns: repeat(3, 1fr);
+         }
+
+         .cell {
+             font-size: 16px;
+         }
+     }
+
+         #scoreboard {
+             text-align: center;
+             margin-top: 20px;
+             font-family: 'Times New Roman', Times, serif;
+             color: #6e4934; 
+         }
+
+         #playerX,
+         #playerO {
+             display: inline-block;
+             margin: 10px;
+             font-size: 24px;
+             text-transform: uppercase;
+         }    
+
+         #playerX::before,
+         #playerO::before {
+             display: block;
+             font-size: 36px;
+             color: #8c735d; 
+             margin-bottom: 5px;
+         }
+
+         #playerX::before {
+             content: 'X';
+         }
+
+         #playerO::before {
+             content: 'O';
+         }
+
+     @media (max-width: 600px) {
+         #playerX,
+         #playerO {
+             font-size: 18px;
+         }
+
+         #playerX::before,
+         #playerO::before {
+             font-size: 24px;
+         }
+     }
+
+         .button {
+             display: inline-block;
+             padding: 15px 30px;
+             font-size: 20px;
+             font-family: 'Times New Roman', Times, serif;
+             text-transform: uppercase;
+             letter-spacing: 1px;
+             background: linear-gradient(to bottom, #b28868, #8c735d); 
+             color: #fff; 
+             border: 2px solid #6e4934; 
+             border-radius: 8px;  
+             text-decoration: none; 
+             cursor: pointer;
+             transition: background 0.3s ease; 
+             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+             margin-left: 10px;
+         } 
+
+         .button:hover {
+             background: linear-gradient(to bottom, #8c735d, #6e4934); 
+         }
+
+     @media (max-width: 600px) {
+         .button {
+         font-size: 18px;
+         padding: 12px 24px;
+         }
+     }
+     </style> 
+ </head>     
+
+ <body>
+     <a href="index.html" class="button">My Portfolio</a>
+     <div class="tic-tac-toe-container">
+     <div id="scoreboard">
+         <span id="playerX">Player 1:  0</span>
+         <span id="playerO">Player 2:  0</span>
+     </div>
+     <div id="tic-tac-toe-board">
+         <div class="cell" onclick="handleCellClick(this)"></div>
+         <div class="cell" onclick="handleCellClick(this)"></div>
+         <div class="cell" onclick="handleCellClick(this)"></div>
+         <div class="cell" onclick="handleCellClick(this)"></div>
+         <div class="cell" onclick="handleCellClick(this)"></div>
+         <div class="cell" onclick="handleCellClick(this)"></div>
+         <div class="cell" onclick="handleCellClick(this)"></div>
+         <div class="cell" onclick="handleCellClick(this)"></div>
+         <div class="cell" onclick="handleCellClick(this)"></div>
+     </div>
+     </div> 
+     <script defer src="javascript.js"></script>
+ </body>
+ </html>
